@@ -1,0 +1,190 @@
+[debug] [2023-04-30T23:45:56.313Z] ----------------------------------------------------------------------
+[debug] [2023-04-30T23:45:56.315Z] Command:       /home/gitpod/.nvm/versions/node/v18.15.0/bin/node /home/gitpod/.nvm/versions/node/v18.15.0/bin/firebase serve
+[debug] [2023-04-30T23:45:56.315Z] CLI Version:   11.29.1
+[debug] [2023-04-30T23:45:56.316Z] Platform:      linux
+[debug] [2023-04-30T23:45:56.316Z] Node Version:  v18.15.0
+[debug] [2023-04-30T23:45:56.316Z] Time:          Sun Apr 30 2023 23:45:56 GMT+0000 (GMT)
+[debug] [2023-04-30T23:45:56.316Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-04-30T23:45:56.396Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-30T23:45:56.396Z] > authorizing via signed-in user (cruzmendoza6@gmail.com)
+[debug] [2023-04-30T23:45:56.396Z] [iam] checking project todoapp-fbc41 for permissions ["firebase.projects.get"]
+[debug] [2023-04-30T23:45:56.398Z] > refreshing access token with scopes: []
+[debug] [2023-04-30T23:45:56.400Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-04-30T23:45:56.400Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-04-30T23:45:56.493Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-04-30T23:45:56.494Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-04-30T23:45:56.498Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/todoapp-fbc41:testIamPermissions [none]
+[debug] [2023-04-30T23:45:56.498Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/todoapp-fbc41:testIamPermissions x-goog-quota-user=projects/todoapp-fbc41
+[debug] [2023-04-30T23:45:56.498Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/todoapp-fbc41:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-04-30T23:45:56.564Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/todoapp-fbc41:testIamPermissions 200
+[debug] [2023-04-30T23:45:56.564Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/todoapp-fbc41:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-04-30T23:45:56.565Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/todoapp-fbc41 [none]
+[debug] [2023-04-30T23:45:56.693Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/todoapp-fbc41 200
+[debug] [2023-04-30T23:45:56.693Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/todoapp-fbc41 {"projectId":"todoapp-fbc41","projectNumber":"108291263956","displayName":"TodoApp","name":"projects/todoapp-fbc41","resources":{"hostingSite":"todoapp-fbc41"},"state":"ACTIVE","etag":"1_68f6d875-ceb9-4da2-8087-a77bfcc99baa"}
+[info] 
+[info] === Serving from '/workspace/React-Js-Todo-App-with-firebase-auth'...
+[info] 
+[debug] [2023-04-30T23:45:56.696Z] defaultcredentials: writing to file /home/gitpod/.config/firebase/cruzmendoza6_gmail_com_application_default_credentials.json
+[debug] [2023-04-30T23:45:56.697Z] Setting GAC to /home/gitpod/.config/firebase/cruzmendoza6_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /home/gitpod/.config/firebase/cruzmendoza6_gmail_com_application_default_credentials.json"}}
+[debug] [2023-04-30T23:45:56.697Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/todoapp-fbc41/adminSdkConfig [none]
+[debug] [2023-04-30T23:45:56.802Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/todoapp-fbc41/adminSdkConfig 200
+[debug] [2023-04-30T23:45:56.803Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/todoapp-fbc41/adminSdkConfig {"projectId":"todoapp-fbc41","storageBucket":"todoapp-fbc41.appspot.com"}
+[debug] [2023-04-30T23:45:56.811Z] Error: listen EADDRINUSE: address already in use ::1:5000
+    at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+    at listenInCluster (node:net:1788:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (node:net:1937:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:8)
+[error] 
+[error] Error: An unexpected error has occurred.
+[info] i  functions: Watching "/workspace/React-Js-Todo-App-with-firebase-auth/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/workspace/React-Js-Todo-App-with-firebase-auth/functions\" for Cloud Functions..."}}
+[debug] [2023-04-30T23:45:56.817Z] Validating nodejs source
+[debug] [2023-04-30T23:52:28.171Z] ----------------------------------------------------------------------
+[debug] [2023-04-30T23:52:28.173Z] Command:       /home/gitpod/.nvm/versions/node/v18.15.0/bin/node /home/gitpod/.nvm/versions/node/v18.15.0/bin/firebase serve
+[debug] [2023-04-30T23:52:28.174Z] CLI Version:   11.29.1
+[debug] [2023-04-30T23:52:28.174Z] Platform:      linux
+[debug] [2023-04-30T23:52:28.175Z] Node Version:  v18.15.0
+[debug] [2023-04-30T23:52:28.175Z] Time:          Sun Apr 30 2023 23:52:28 GMT+0000 (GMT)
+[debug] [2023-04-30T23:52:28.175Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-04-30T23:52:28.269Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-30T23:52:28.270Z] > authorizing via signed-in user (cruzmendoza6@gmail.com)
+[debug] [2023-04-30T23:52:28.270Z] [iam] checking project todoapp-fbc41 for permissions ["firebase.projects.get"]
+[debug] [2023-04-30T23:52:28.273Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/todoapp-fbc41:testIamPermissions [none]
+[debug] [2023-04-30T23:52:28.273Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/todoapp-fbc41:testIamPermissions x-goog-quota-user=projects/todoapp-fbc41
+[debug] [2023-04-30T23:52:28.273Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/todoapp-fbc41:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-04-30T23:52:28.380Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/todoapp-fbc41:testIamPermissions 200
+[debug] [2023-04-30T23:52:28.381Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/todoapp-fbc41:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-04-30T23:52:28.382Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/todoapp-fbc41 [none]
+[debug] [2023-04-30T23:52:28.490Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/todoapp-fbc41 200
+[debug] [2023-04-30T23:52:28.491Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/todoapp-fbc41 {"projectId":"todoapp-fbc41","projectNumber":"108291263956","displayName":"TodoApp","name":"projects/todoapp-fbc41","resources":{"hostingSite":"todoapp-fbc41"},"state":"ACTIVE","etag":"1_68f6d875-ceb9-4da2-8087-a77bfcc99baa"}
+[info] 
+[info] === Serving from '/workspace/React-Js-Todo-App-with-firebase-auth'...
+[info] 
+[debug] [2023-04-30T23:52:28.494Z] defaultcredentials: writing to file /home/gitpod/.config/firebase/cruzmendoza6_gmail_com_application_default_credentials.json
+[debug] [2023-04-30T23:52:28.496Z] Setting GAC to /home/gitpod/.config/firebase/cruzmendoza6_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /home/gitpod/.config/firebase/cruzmendoza6_gmail_com_application_default_credentials.json"}}
+[debug] [2023-04-30T23:52:28.497Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/todoapp-fbc41/adminSdkConfig [none]
+[debug] [2023-04-30T23:52:28.627Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/todoapp-fbc41/adminSdkConfig 200
+[debug] [2023-04-30T23:52:28.627Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/todoapp-fbc41/adminSdkConfig {"projectId":"todoapp-fbc41","storageBucket":"todoapp-fbc41.appspot.com"}
+[debug] [2023-04-30T23:52:28.637Z] Error: listen EADDRINUSE: address already in use ::1:5000
+    at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+    at listenInCluster (node:net:1788:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (node:net:1937:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:8)
+[error] 
+[error] Error: An unexpected error has occurred.
+[info] i  functions: Watching "/workspace/React-Js-Todo-App-with-firebase-auth/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/workspace/React-Js-Todo-App-with-firebase-auth/functions\" for Cloud Functions..."}}
+[debug] [2023-04-30T23:52:28.643Z] Validating nodejs source
+[debug] [2023-05-01T00:22:15.921Z] ----------------------------------------------------------------------
+[debug] [2023-05-01T00:22:15.923Z] Command:       /home/gitpod/.nvm/versions/node/v18.15.0/bin/node /home/gitpod/.nvm/versions/node/v18.15.0/bin/firebase serve
+[debug] [2023-05-01T00:22:15.923Z] CLI Version:   11.29.1
+[debug] [2023-05-01T00:22:15.923Z] Platform:      linux
+[debug] [2023-05-01T00:22:15.923Z] Node Version:  v18.15.0
+[debug] [2023-05-01T00:22:15.924Z] Time:          Mon May 01 2023 00:22:15 GMT+0000 (GMT)
+[debug] [2023-05-01T00:22:15.924Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-05-01T00:22:16.011Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-01T00:22:16.012Z] > authorizing via signed-in user (cruzmendoza6@gmail.com)
+[debug] [2023-05-01T00:22:16.012Z] [iam] checking project todoapp-fbc41 for permissions ["firebase.projects.get"]
+[debug] [2023-05-01T00:22:16.014Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/todoapp-fbc41:testIamPermissions [none]
+[debug] [2023-05-01T00:22:16.014Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/todoapp-fbc41:testIamPermissions x-goog-quota-user=projects/todoapp-fbc41
+[debug] [2023-05-01T00:22:16.014Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/todoapp-fbc41:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-05-01T00:22:16.130Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/todoapp-fbc41:testIamPermissions 200
+[debug] [2023-05-01T00:22:16.130Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/todoapp-fbc41:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-05-01T00:22:16.131Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/todoapp-fbc41 [none]
+[debug] [2023-05-01T00:22:16.268Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/todoapp-fbc41 200
+[debug] [2023-05-01T00:22:16.268Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/todoapp-fbc41 {"projectId":"todoapp-fbc41","projectNumber":"108291263956","displayName":"TodoApp","name":"projects/todoapp-fbc41","resources":{"hostingSite":"todoapp-fbc41"},"state":"ACTIVE","etag":"1_284c6b3d-8f44-4dad-95e2-acd69a3835b2"}
+[info] 
+[info] === Serving from '/workspace/React-Js-Todo-App-with-firebase-auth'...
+[info] 
+[debug] [2023-05-01T00:22:16.273Z] defaultcredentials: writing to file /home/gitpod/.config/firebase/cruzmendoza6_gmail_com_application_default_credentials.json
+[debug] [2023-05-01T00:22:16.275Z] Setting GAC to /home/gitpod/.config/firebase/cruzmendoza6_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /home/gitpod/.config/firebase/cruzmendoza6_gmail_com_application_default_credentials.json"}}
+[debug] [2023-05-01T00:22:16.276Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/todoapp-fbc41/adminSdkConfig [none]
+[debug] [2023-05-01T00:22:16.392Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/todoapp-fbc41/adminSdkConfig 200
+[debug] [2023-05-01T00:22:16.392Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/todoapp-fbc41/adminSdkConfig {"projectId":"todoapp-fbc41","storageBucket":"todoapp-fbc41.appspot.com"}
+[debug] [2023-05-01T00:22:16.402Z] Error: listen EADDRINUSE: address already in use ::1:5000
+    at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+    at listenInCluster (node:net:1788:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (node:net:1937:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:8)
+[error] 
+[error] Error: An unexpected error has occurred.
+[info] i  functions: Watching "/workspace/React-Js-Todo-App-with-firebase-auth/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/workspace/React-Js-Todo-App-with-firebase-auth/functions\" for Cloud Functions..."}}
+[debug] [2023-05-01T00:22:16.408Z] Validating nodejs source
+[debug] [2023-05-01T00:25:51.715Z] ----------------------------------------------------------------------
+[debug] [2023-05-01T00:25:51.717Z] Command:       /home/gitpod/.nvm/versions/node/v18.15.0/bin/node /home/gitpod/.nvm/versions/node/v18.15.0/bin/firebase serve
+[debug] [2023-05-01T00:25:51.718Z] CLI Version:   11.29.1
+[debug] [2023-05-01T00:25:51.718Z] Platform:      linux
+[debug] [2023-05-01T00:25:51.718Z] Node Version:  v18.15.0
+[debug] [2023-05-01T00:25:51.718Z] Time:          Mon May 01 2023 00:25:51 GMT+0000 (GMT)
+[debug] [2023-05-01T00:25:51.719Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-05-01T00:25:51.844Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-01T00:25:51.845Z] > authorizing via signed-in user (cruzmendoza6@gmail.com)
+[debug] [2023-05-01T00:25:51.845Z] [iam] checking project todoapp-fbc41 for permissions ["firebase.projects.get"]
+[debug] [2023-05-01T00:25:51.847Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/todoapp-fbc41:testIamPermissions [none]
+[debug] [2023-05-01T00:25:51.847Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/todoapp-fbc41:testIamPermissions x-goog-quota-user=projects/todoapp-fbc41
+[debug] [2023-05-01T00:25:51.847Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/todoapp-fbc41:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-05-01T00:25:52.045Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/todoapp-fbc41:testIamPermissions 200
+[debug] [2023-05-01T00:25:52.046Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/todoapp-fbc41:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-05-01T00:25:52.047Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/todoapp-fbc41 [none]
+[debug] [2023-05-01T00:25:52.219Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/todoapp-fbc41 200
+[debug] [2023-05-01T00:25:52.220Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/todoapp-fbc41 {"projectId":"todoapp-fbc41","projectNumber":"108291263956","displayName":"TodoApp","name":"projects/todoapp-fbc41","resources":{"hostingSite":"todoapp-fbc41"},"state":"ACTIVE","etag":"1_284c6b3d-8f44-4dad-95e2-acd69a3835b2"}
+[info] 
+[info] === Serving from '/workspace/React-Js-Todo-App-with-firebase-auth'...
+[info] 
+[debug] [2023-05-01T00:25:52.223Z] defaultcredentials: writing to file /home/gitpod/.config/firebase/cruzmendoza6_gmail_com_application_default_credentials.json
+[debug] [2023-05-01T00:25:52.224Z] Setting GAC to /home/gitpod/.config/firebase/cruzmendoza6_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /home/gitpod/.config/firebase/cruzmendoza6_gmail_com_application_default_credentials.json"}}
+[debug] [2023-05-01T00:25:52.225Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/todoapp-fbc41/adminSdkConfig [none]
+[debug] [2023-05-01T00:25:52.350Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/todoapp-fbc41/adminSdkConfig 200
+[debug] [2023-05-01T00:25:52.350Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/todoapp-fbc41/adminSdkConfig {"projectId":"todoapp-fbc41","storageBucket":"todoapp-fbc41.appspot.com"}
+[debug] [2023-05-01T00:25:52.359Z] Error: listen EADDRINUSE: address already in use ::1:5000
+    at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+    at listenInCluster (node:net:1788:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (node:net:1937:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:8)
+[error] 
+[error] Error: An unexpected error has occurred.
+[info] i  functions: Watching "/workspace/React-Js-Todo-App-with-firebase-auth/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/workspace/React-Js-Todo-App-with-firebase-auth/functions\" for Cloud Functions..."}}
+[debug] [2023-05-01T00:25:52.366Z] Validating nodejs source
+[debug] [2023-05-01T00:46:14.130Z] ----------------------------------------------------------------------
+[debug] [2023-05-01T00:46:14.132Z] Command:       /home/gitpod/.nvm/versions/node/v18.15.0/bin/node /home/gitpod/.nvm/versions/node/v18.15.0/bin/firebase serve
+[debug] [2023-05-01T00:46:14.132Z] CLI Version:   11.29.1
+[debug] [2023-05-01T00:46:14.133Z] Platform:      linux
+[debug] [2023-05-01T00:46:14.133Z] Node Version:  v18.15.0
+[debug] [2023-05-01T00:46:14.133Z] Time:          Mon May 01 2023 00:46:14 GMT+0000 (GMT)
+[debug] [2023-05-01T00:46:14.133Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-05-01T00:46:14.207Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-05-01T00:46:14.207Z] > authorizing via signed-in user (cruzmendoza6@gmail.com)
+[debug] [2023-05-01T00:46:14.207Z] [iam] checking project todoapp-fbc41 for permissions ["firebase.projects.get"]
+[debug] [2023-05-01T00:46:14.209Z] > refreshing access token with scopes: []
+[debug] [2023-05-01T00:46:14.211Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-05-01T00:46:14.211Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-05-01T00:46:14.295Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-05-01T00:46:14.296Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-05-01T00:46:14.301Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/todoapp-fbc41:testIamPermissions [none]
+[debug] [2023-05-01T00:46:14.301Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/todoapp-fbc41:testIamPermissions x-goog-quota-user=projects/todoapp-fbc41
+[debug] [2023-05-01T00:46:14.301Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/todoapp-fbc41:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-05-01T00:46:14.386Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/todoapp-fbc41:testIamPermissions 200
+[debug] [2023-05-01T00:46:14.386Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/todoapp-fbc41:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-05-01T00:46:14.388Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/todoapp-fbc41 [none]
+[debug] [2023-05-01T00:46:14.538Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/todoapp-fbc41 200
+[debug] [2023-05-01T00:46:14.538Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/todoapp-fbc41 {"projectId":"todoapp-fbc41","projectNumber":"108291263956","displayName":"TodoApp","name":"projects/todoapp-fbc41","resources":{"hostingSite":"todoapp-fbc41","storageBucket":"todoapp-fbc41.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_37e16d3b-34c9-4d3f-ade2-16c5366f7122"}
+[info] 
+[info] === Serving from '/workspace/React-Js-Todo-App-with-firebase-auth'...
+[info] 
+[debug] [2023-05-01T00:46:14.542Z] defaultcredentials: writing to file /home/gitpod/.config/firebase/cruzmendoza6_gmail_com_application_default_credentials.json
+[debug] [2023-05-01T00:46:14.543Z] Setting GAC to /home/gitpod/.config/firebase/cruzmendoza6_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /home/gitpod/.config/firebase/cruzmendoza6_gmail_com_application_default_credentials.json"}}
+[debug] [2023-05-01T00:46:14.544Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/todoapp-fbc41/adminSdkConfig [none]
+[debug] [2023-05-01T00:46:14.676Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/todoapp-fbc41/adminSdkConfig 200
+[debug] [2023-05-01T00:46:14.676Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/todoapp-fbc41/adminSdkConfig {"projectId":"todoapp-fbc41","storageBucket":"todoapp-fbc41.appspot.com","locationId":"us-central"}
+[debug] [2023-05-01T00:46:14.686Z] Error: listen EADDRINUSE: address already in use ::1:5000
+    at Server.setupListenHandle [as _listen2] (node:net:1740:16)
+    at listenInCluster (node:net:1788:12)
+    at GetAddrInfoReqWrap.doListen [as callback] (node:net:1937:7)
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:109:8)
+[error] 
+[error] Error: An unexpected error has occurred.
+[info] i  functions: Watching "/workspace/React-Js-Todo-App-with-firebase-auth/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/workspace/React-Js-Todo-App-with-firebase-auth/functions\" for Cloud Functions..."}}
+[debug] [2023-05-01T00:46:14.693Z] Validating nodejs source
