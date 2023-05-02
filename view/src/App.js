@@ -4,7 +4,6 @@ import login from './pages/login'
 import signup from './pages/signup'
 import home from './pages/home';
 import './App.css';
-
 import { ThemeProvider as MuiThemeProvider } from '@material-ui/core/styles';
 import createMuiTheme from '@material-ui/core/styles/createMuiTheme';
 
